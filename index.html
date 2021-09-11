@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D packing Meli</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <button onclick="manual()" id="manual">Manual Rotation</button>
+        <!--<button onclick="auto()" id="auto">Automatic Rotation</button>-->
+        <button onclick="stop()" id="stop">Parar</button>
+    </header>
+
+    <div id="box">
+        <div class="toping">
+
+        </div>
+        <div>
+            <span></span>
+            <span> <i class="tapex"></i></span>
+            <span></span>
+            <span><i class="tapex"></i></span>
+        </div>
+    </div>
+
+    <footer>
+        <p>Hecho con insomio y aburricion por <a href="https://www.manusanchez.xyz" target="_blank">Manu sanchez</a>.</p>
+    </footer>
+
+    <!-- rotacion con mouse-->
+    <script>
+        function manual(){
+
+        let = document.getElementById('box');
+        window.onmousemove = function (e) {
+            box.style.transform = "rotateX(330deg) rotateY(" + e.clientX + "deg)";
+        }
+    }
+    function stop(){
+        let = document.getElementById('box');
+        window.onmousemove = function (e) {
+            box.style.transform = "rotateX(-30deg) rotateY(330deg)";
+        }
+    }
+    
+    function auto(){
+    }
+    </script>
+</body>
+
+</html>
+giracion 10s linear infinite;
